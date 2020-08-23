@@ -1,0 +1,91 @@
+%% Creator: Inkscape inkscape 0.92.2, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file './ims/wang2009_fig1_edited.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{356.21231199bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.95861716)%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{./ims/wang2009_fig1_edited.pdf}}%
+    \put(0.18296834,0.20684443){\color[rgb]{0.1372549,0.12156863,0.1254902}\makebox(0,0)[lb]{\smash{\textbf{Base-resolution expression profile}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{./ims/wang2009_fig1_edited.pdf}}%
+    \put(0.42774346,0.3516474){\color[rgb]{0.1372549,0.12156863,0.1254902}\makebox(0,0)[lb]{\smash{\textbf{Exonic reads}}}}%
+    \put(0.46550995,0.82699565){\color[rgb]{0.1372549,0.12156863,0.1254902}\makebox(0,0)[lb]{\smash{or}}}%
+    \put(0.39281202,0.00440506){\color[rgb]{0.1372549,0.12156863,0.1254902}\makebox(0,0)[lb]{\smash{Nucleotide position}}}%
+    \put(0.16794752,0.02376458){\color[rgb]{0.1372549,0.12156863,0.1254902}\rotatebox{90}{\makebox(0,0)[lb]{\smash{RNA expression}}}}%
+    \put(-0.00122298,0.39916399){\color[rgb]{0.1372549,0.12156863,0.1254902}\makebox(0,0)[lb]{\smash{Coding sequence}}}%
+    \put(0.13899628,0.42057374){\color[rgb]{0.1372549,0.12156863,0.1254902}\makebox(0,0)[lb]{\smash{ORF}}}%
+    \put(0.18309705,0.30483486){\color[rgb]{0.1372549,0.12156863,0.1254902}\makebox(0,0)[lb]{\smash{\textbf{Junction\\ reads}}}}}%
+    \put(0.73733212,0.25787722){\color[rgb]{0.1372549,0.12156863,0.1254902}\makebox(0,0)[lb]{\smash{Mapped sequence reads}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{./ims/wang2009_fig1_edited.pdf}}%
+    \put(0.73730322,0.56681151){\color[rgb]{0.1372549,0.12156863,0.1254902}\makebox(0,0)[lb]{\smash{Short-sequence\\ reads}}}%
+    \put(0.79837418,0.71021097){\color[rgb]{0.1372549,0.12156863,0.1254902}\makebox(0,0)[lb]{\smash{EST library}}}%
+    \put(0.79837418,0.68703703){\color[rgb]{0.1372549,0.12156863,0.1254902}\makebox(0,0)[lb]{\smash{with adaptors}}}%
+    \put(0.22573477,0.79351937){\color[rgb]{0.1372549,0.12156863,0.1254902}\makebox(0,0)[lb]{\smash{RNA Fragments}}}%
+    \put(0.88264105,0.79073156){\color[rgb]{0.1372549,0.12156863,0.1254902}\makebox(0,0)[lb]{\smash{cDNA}}}%
+    \put(0.88542886,0.94181932){\color[rgb]{0.1372549,0.12156863,0.1254902}\makebox(0,0)[lb]{\smash{mRNA}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{./ims/wang2009_fig1_edited.pdf}}%
+    \put(0.69809905,0.94218736){\color[rgb]{1,1,1}\makebox(0,0)[lb]{\smash{AAAAAAAA}}}%
+    \put(0.85953232,0.83823146){\color[rgb]{1,1,1}\makebox(0,0)[lb]{\smash{AAAAAAAA}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{./ims/wang2009_fig1_edited.pdf}}%
+    \put(0.85954203,0.81625004){\color[rgb]{1,1,1}\makebox(0,0)[lb]{\smash{TTTTTTTT}}}%
+    \put(0.29173779,0.6012816){\color[rgb]{0.1372549,0.12156863,0.1254902}\makebox(0,0)[lb]{\smash{ATCACAGTGGGACTCCATAAATTTTTCT}}}%
+    \put(0.29173779,0.57514561){\color[rgb]{0.1372549,0.12156863,0.1254902}\makebox(0,0)[lb]{\smash{CGAAGGACCAGCAGAAACGAGA}}}%
+    \put(0.58404699,0.57514561){\color[rgb]{0.1372549,0.12156863,0.1254902}\makebox(0,0)[lb]{\smash{G}}}%
+    \put(0.59733276,0.57514561){\color[rgb]{1,1,1}\makebox(0,0)[lb]{\smash{AAAA}}}%
+    \put(0.65047597,0.57514561){\color[rgb]{1,1,1}\makebox(0,0)[lb]{\smash{A}}}%
+    \put(0.29173779,0.54900962){\color[rgb]{0.1372549,0.12156863,0.1254902}\makebox(0,0)[lb]{\smash{GGACAGAGTCCCCAGCGGGCTGAAGGG}}}%
+    \put(0.65047597,0.54900962){\color[rgb]{0.1372549,0.12156863,0.1254902}\makebox(0,0)[lb]{\smash{G}}}%
+    \put(0.29173779,0.52287363){\color[rgb]{0.1372549,0.12156863,0.1254902}\makebox(0,0)[lb]{\smash{ATGAAACATTAAAGTCAAACAATATGA}}}%
+    \put(0.65047597,0.52287363){\color[rgb]{0.1372549,0.12156863,0.1254902}\makebox(0,0)[lb]{\smash{A}}}%
+    \put(0.29173779,0.49673764){\color[rgb]{0.1372549,0.12156863,0.1254902}\makebox(0,0)[lb]{\smash{......}}}%
+    \put(0.70098376,0.32167011){\color[rgb]{1,1,1}\makebox(0,0)[lb]{\smash{...}}}%
+    \put(0.73692073,0.32167011){\color[rgb]{1,1,1}\makebox(0,0)[lb]{\smash{AAAAAA}}}%
+    \put(0.70098376,0.34395103){\color[rgb]{1,1,1}\makebox(0,0)[lb]{\smash{...}}}%
+    \put(0.73692073,0.34395103){\color[rgb]{1,1,1}\makebox(0,0)[lb]{\smash{AAAAAAAAA}}}%
+    \put(0.73729096,0.29592618){\color[rgb]{0.1372549,0.12156863,0.1254902}\makebox(0,0)[lb]{\smash{\textbf{Poly(A) end reads}}}}%
+  \end{picture}%
+\endgroup%

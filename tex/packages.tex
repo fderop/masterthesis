@@ -1,0 +1,258 @@
+% textwidth = 15,3589644278 cm
+% textheight = 21,395972 cm
+% general
+\usepackage[DIV=12, BCOR=6mm, headinclude=true, footinclude=false]{typearea} % page layout
+\renewcommand{\familydefault}{\sfdefault} % default sans serif
+\pagestyle{plain}
+\makeatletter
+\if@twoside % commands below work only for twoside option of \documentclass
+\newlength{\textblockoffset}
+\setlength{\textblockoffset}{12mm}
+\addtolength{\hoffset}{\textblockoffset}
+\addtolength{\evensidemargin}{-2.0\textblockoffset}
+\fi
+\makeatother
+
+% appendix package
+% \usepackage[toc,page]{appendix}
+
+% tabular environment vertical stretch
+\renewcommand{\arraystretch}{1.2}
+
+% and fixed widths
+\usepackage{array}
+
+% force pages
+\usepackage{afterpage}
+
+% margins
+
+\usepackage[activate={true,nocompatibility}, final,tracking=true,kerning=true,spacing=false, factor=1100,stretch=10,shrink=10]{microtype}
+\microtypecontext{spacing=nonfrench}
+% activate={true,nocompatibility} - activate protrusion and expansion
+% final - enable microtype; use "draft" to disable
+% tracking=true, kerning=true, spacing=true - activate these techniques
+% factor=1100 - add 10% to the protrusion amount (default is 1000)
+% stretch=10, shrink=10 - reduce stretchability/shrinkability (default is 20/20)
+
+\usepackage{graphicx}
+\usepackage[english]{babel}
+\usepackage[pdfusetitle,hidelinks,plainpages=false]{hyperref}
+\hypersetup{
+	colorlinks=false,
+	citecolor=Black,
+	linkcolor=Black,
+	urlcolor=Blue}
+
+\newcommand*{\fullref}[1]{\hyperref[{#1}]{\autoref*{#1}. \nameref*{#1}}} % One single link
+
+\usepackage{etoolbox}
+\usepackage{ragged2e}
+\usepackage[T1]{fontenc}
+
+% multiple columns
+\usepackage{multicol}
+
+% bibliography
+\usepackage{natbib}
+\bibliographystyle{humannat}
+
+% images
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,angles,quotes}
+\tikzset{my rounded corners/.append style={rounded corners=2pt},}
+\colorlet{linecol}{black!75}
+\usepackage{forest}
+\usepackage[labelfont=bf,margin={18pt,18pt}]{caption} % captions
+
+% initialise some epigraph settings
+\usepackage{epigraph}
+
+% toc depth
+\setcounter{tocdepth}{5}
+
+% font/typeface
+\usepackage{tgbonum}
+\usepackage{lmodern}
+
+% chapter headers and sections
+\usepackage[raggedright]{titlesec}
+\usepackage{blindtext}
+\usepackage{color}
+\definecolor{gray75}{gray}{0.75}
+\newcommand{\hsp}{\hspace{20pt}}
+\titleformat{\chapter}[hang] % format chapter
+	{\Huge\mdseries\raggedright}
+	{\thechapter\hsp\textcolor{gray75}{|}\hsp}
+	{0pt}{\Huge\mdseries}
+
+\titleformat{\section}[hang] % format section
+	{\LARGE\mdseries\raggedright}
+	{\thesection\hsp}
+	{0pt}{\LARGE\mdseries}
+
+\titleformat{\subsection}[hang] % format subsection
+	{\Large\mdseries\raggedright}
+	{}
+	{0pt}{\Large\mdseries}
+
+\titleformat{\subsubsection}[hang] % format subsubsection
+	{\large\mdseries\raggedright}
+	{}
+	{0pt}{\large\mdseries}
+
+% this alters "before" spacing (the second length argument) to 0
+\titlespacing*{\chapter}{0pt}{0pt}{40pt}
+
+\SetExtraKerning[unit=space] % solve dots
+   {encoding={*}, family={qhv}, series={b}, size={large,Large}}
+   {1={-200,-200},
+\textendash={400,400}}
+
+% toc, lof, lot style
+\renewcommand\printtoctitle[1]{\huge\mdseries #1}
+\renewcommand\printloftitle[1]{\huge\mdseries #1}
+\renewcommand\printlottitle[1]{\huge\mdseries #1}
+\renewcommand*{\cftchapterfont}{\normalfont\Large}
+\renewcommand*{\cftchapterpagefont}{\normalfont}
+
+% paragraph indentation
+\setlength{\parindent}{12pt}
+
+% for copyright and trademark signs
+\usepackage{textcomp}
+
+% inserting blank page
+\usepackage{afterpage}
+\newcommand\blankpage{%
+    \null
+    \thispagestyle{empty}%
+    \addtocounter{page}{-1}%
+    \newpage}
+
+% SI units
+\usepackage{siunitx}
+\sisetup{detect-all}
+\DeclareSIUnit{\molar}{M}
+\DeclareSIUnit{\unit}{U}
+\DeclareSIUnit{\rcf}{rcf}
+\DeclareSIUnit{\min}{min.}
+\DeclareSIPrePower{\quartic}{4}
+
+% for nice formulas and whatnot
+\usepackage{amsmath}
+\makeatletter
+\providecommand\add@text{}
+\newcommand\tagaddtext[1]{%
+	\gdef\add@text{#1\gdef\add@text{}}}%
+\renewcommand\tagform@[1]{%
+	\maketag@@@{\llap{\add@text\quad}(\ignorespaces#1\unskip\@@italiccorr)}%
+}
+\makeatother
+
+% todonotes
+\usepackage{todonotes}
+
+% floating images force, and wrap fig
+\usepackage{wrapfig}
+
+% generate some fake text in the literature review, nobody reads that anyway
+\usepackage{lipsum}
+
+% generate pretty matlab code
+\usepackage[numbered,framed]{matlab-prettifier}
+
+% python syntax highlight
+\usepackage{pythonhighlight}
+
+% glossaries
+\usepackage[nopostdot, style=super, nonumberlist, acronym, toc, automake=true]{glossaries} % can add automake=true argument
+\makeglossaries
+
+\newacronym{smart-seq}{Smart-seq}{switching mechanism at the 5' end of RNA template sequencing}
+\newacronym{tso}{TSO}{template-switching oligo}
+\newacronym{lna}{LNA}{locked nucleic acid}
+\newacronym{mmlv}{MMLV}{Moloney murine leukemia virus}
+\newacronym{umi}{UMI}{unique molecular identifier}
+\newacronym{snp}{SNP}{single-nucleotide polymorphism}
+\newacronym{cel-seq}{CEL-seq}{cell expression by linear amplification and sequencing}
+\newacronym{ivt}{IVT}{in-vitro transcription}
+\newacronym{facs}{FACS}{fluorescence-activated cell sorting}
+\newacronym{atac}{ATAC}{assay for transposase-accessible chromatin}
+\newacronym{tf}{TF}{transcription factor}
+\newacronym{atac-seq}{ATAC-seq}{assay for transposase-accessible chromatin using sequencing}
+\newacronym{faire-seq}{FAIRE-seq}{formaldehyde-assisted isolation of regulatory elements by sequencing}
+\newacronym{chip-seq}{ChIP-seq}{chromatin immunoprecipitation sequencing}
+\newacronym{sbs}{SBS}{sequencing by synthesis}
+\newacronym{ngs}{NGS}{next-generation sequencing}
+\newacronym{scbs-seq}{scBS-seq}{single-cell bisulfite sequencing}
+\newacronym{bp}{bp}{base-pair(s)}
+\newacronym{kb}{kb}{kilobase(s)}
+\newacronym{5mc}{5mC}{5'-methylcytosine}
+\newacronym{cpg}{CpG}{5'-cytosine-phosphate-guanine-3'}
+\newacronym{tss}{TSS}{transcription start site}
+\newacronym{esc}{ESC}{embryonic stem cell}
+\newacronym{scatac-seq}{scATAC-seq}{single-cell assay for transposase-accessible chromatin}
+\newacronym{sds}{SDS}{sodium-dodecylsufate}
+\newacronym{pcr}{PCR}{polymerase chain reaction}
+\newacronym{5utr}{5'UTR}{5' untranslated region}
+\newacronym{mrna}{mRNA}{messenger RNA}
+\newacronym{cdna}{cDNA}{complementary DNA}
+\newacronym{dna}{DNA}{deoxyribonucleic acid}
+\newacronym{rna}{RNA}{ribonucleic acid}
+\newacronym{scrna-seq}{scRNA-seq}{single-cell RNA sequencing}
+\newacronym{ifc}{IFC}{integrated fluidic circuit}
+\newacronym{edta}{EDTA}{ethylenediaminetetraacetic acid}
+\newacronym{pdms}{PDMS}{polydimethylsiloxane}
+\newacronym[longplural={single-cell transcriptomes attached to microparticles}]{stamp}{STAMP}{single-cell transcriptome attached to microparticle}
+\newacronym{scrna-atac-seq}{scRNA-ATAC-seq}{single-cell RNA and ATAC-sequencing}
+\newacronym{sci}{sci}{single-cell combinatorial indexing}
+\newacronym{sciatac-seq}{sci-ATAC-seq}{single-cell combinatorial indexing ATAC-seq}
+\newacronym{rna-seq}{RNA-seq}{RNA sequencing}
+\newacronym{scirna-seq}{sci-RNA-seq}{single-cell combinatorial indexing RNA-seq}
+\newacronym{sci-car}{sci-CAR}{single-cell combinatorial indexing for chromatin accesibility and RNA}
+\newacronym{ispcr}{ISPCR}{inverse suppressive PCR}
+\newacronym{split-seq}{SPLiT-seq}{split-pool ligation-based transcriptome sequencing}
+\newacronym{uv}{UV}{ultraviolet}
+\newacronym{hek}{HEK}{human embryonic kidney}
+\newacronym{crispr}{CRISPR}{clustered regularly interspaced short palindromic repeats}
+\newacronym{ercc}{ERCC}{external RNA controls consortium}
+\newacronym{mars-seq}{MARS-seq}{massively parallel RNA single-cell sequencing}
+\newacronym{rt}{RT}{reverse transcription}
+\newacronym{hca}{HCA}{human cell atlas}
+\newacronym{pmma}{PMMA}{poly(methyl methacrylate)}
+\newacronym{ipa}{IPA}{isopropyl alcohol}
+\newacronym{hfe}{HFE}{hydrofluoroether}
+\newacronym{temed}{TEMED}{tetramethylethylenediamine}
+\newacronym{aps}{APS}{ammonium persulfate}
+\newacronym{tbset}{TBSET}{tris-buffered EDTA Triton}
+\newacronym{ab}{AB}{acrylamide/bis-acrylamide}
+\newacronym{aa}{AA}{acrylamide}
+\newacronym{bis}{BIS}{bis-acrylamide}
+\newacronym{aabis}{AA/BIS}{acrylamide/bis-acrylamide}
+\newacronym{tet}{TET}{tris-EDTA-Tween}
+\newacronym{reml}{REML}{restricted maximum likelihood}
+\newacronym{bhb}{BHB}{barcoded hydrogel bead}
+\newacronym{fish}{FISH}{fluorescence in situ hybridisation}
+\newacronym{qpcr}{qPCR}{quantitative polymerase chain reaction}
+\newacronym{dtt}{DTT}{dithiothreitol}
+\newacronym{ct}{Ct}{cycle threshold}
+\newacronym{dntp}{dNTP}{deoxynucleosidetriphosphate}
+\newacronym{pfo}{PFO}{1H, 1H, 2H, 2H-perfluoro-1-octanol}
+\newacronym{fam}{FAM}{fluorescein amidite}
+\newacronym{hb}{HB}{hydrogel bead}
+\newacronym{hbw}{HBW}{hydrogel bead wash buffer}
+\newacronym{pbs}{PBS}{phosphate-buffered saline}
+\newacronym{peg}{PEG}{polyethylene glycol}
+\newacronym{bsa}{BSA}{bovine serum albumin}
+\newacronym{star}{STAR}{spliced transcripts alignment to a reference}
+\newacronym{dropatac}{Drop-ATAC}{droplet assay for transposase accessible chromatin}
+\newacronym{tac}{TAC}{transposase accessible chromatin}
+\newacronym{blat}{blat}{BLAST-like alignment tool}
+\newacronym{blast}{BLAST}{basic local alignment search tool}
+\newacronym{cca}{CCA}{canonical correlation analysis}
+\newacronym{tsne}{tSNE}{t-distributed stochastic neighbour embedding}
+\newacronym{gapdh}{GAPDH}{glyceraldehyde 3-phosphate dehydrogenase}
+\newacronym{cheq-seq}{CHEQ-seq}{captured high-throughput enhancer testing by  quantitative sequencing}
+\newacronym{umap}{UMAP}{uniform manifold approximation and projection}
+\newacronym{dnase-seq}{DNase-seq}{DNase I hypersensitive sites sequencing}
