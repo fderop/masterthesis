@@ -1,0 +1,52 @@
+\documentclass[a4paper, 12pt, twoside]{memoir}
+\newcommand{\pms}{\par\medskip}
+
+\input{./tex/packages}
+\begin{document}
+{\fontfamily{lmss}\selectfont
+
+% front matter %
+
+\frontmatter
+\include{./tex/preface}
+\include{./tex/abstract}
+\tableofcontents*
+
+% \listoftables
+\listoffigures
+\glsaddall
+\printglossary[title=List of Acronyms, toctitle=List of Acronyms,type=\acronymtype]*
+
+% main text %
+
+\mainmatter
+\renewcommand{\thechapter}{C}
+\include{./tex/context}
+\renewcommand{\thechapter}{\arabic{chapter}}
+\include{./tex/ch_literaturereview}
+\include{./tex/ch_indrop}
+\include{./tex/ch_dropatac}
+\include{./tex/ch_seq}
+\include{./tex/ch_conclusion}
+
+% back matter %
+
+\bibliography{./tex/bibliography}
+\input{./tex/app}
+
+\pagenumbering{gobble}
+
+\afterpage{\blankpage}
+\input{./tex/vulg}
+
+\newpage
+
+% \begin{figure*}
+%     \centering
+%     \includegraphics[width=1.5cm]{./ims/jsb.png}
+% \end{figure*}
+% \clearpage
+
+\afterpage{\blankpage}
+}
+\end{document}

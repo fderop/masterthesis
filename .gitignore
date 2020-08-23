@@ -1,0 +1,8 @@
+*.acn
+*.aux
+*.fdb_latexmk
+*.fls
+*.glo
+*.ist
+*.log
+*.out
